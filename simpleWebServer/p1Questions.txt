@@ -1,0 +1,13 @@
+1.
+3 Hours
+
+2.
+Thought and Design: 4-5 hours
+Programming: 4-5 Hours
+// Thought and Design and Programming all happened at the same time
+
+Debugging: 1-2 Hours
+
+Total: 6-7 hours
+
+3. My original estimate was 50% of the total time it took.
