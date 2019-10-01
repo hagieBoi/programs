@@ -1,0 +1,151 @@
+
+a{
+    color:#a2d5f2;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+
+a:hover{
+    color: #ff7e67;
+}
+
+body{
+    background-color: #a2d5f2;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+
+}
+
+h1{
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+    font-size: 5.625rem;
+}
+
+h2{
+    font-family: 'Rock Salt', cursive;
+    color: #ff7e67;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plane{
+    overflow: hidden;
+    display: block;
+    position:absolute;
+    height: 50px;
+    top: 500px;
+    animation: fly 15000ms linear 0s infinite normal;
+
+}
+
+.header{
+    background-color: #a2d5f2;
+    margin-top: 0;
+    text-align: center;
+    color: #07689f;
+
+}
+
+.bottomcloud, .topcloud{
+    position: absolute;
+    width: 200px;
+}
+
+.topcloud{
+    top: 75px;
+    right: 0;
+    animation: float2 15000ms ease-in-out 0s infinite alternate;
+}
+
+.bottomcloud{
+    left: 0;
+    animation: float1 10000ms ease-in-out 0s infinite alternate;
+}
+
+.subheader{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+
+.bottom-container{
+    background-color: #07689f;
+    margin-top: 10px;
+    position: relative;
+    top: 16px;
+    color:#a2d5f2;
+    width: 800px;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.mountain{
+    position: relative;
+    top: 4px;
+    width: 750px;
+}
+
+.headContainer{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+}
+
+.text{
+    background-color: #fafafa;
+    width: 800px;
+    margin: 1rem auto 1rem auto;
+    border-radius: .75rem;
+
+}
+.NMSUimg{
+    display:inline-block;
+    width:100px;
+    margin-top: 5%;
+}
+.profile{
+    display: inline-block;
+    width: 80%;
+    padding: 0 .5rem 0 .5rem;
+
+}
+
+.skillhead{
+    text-decoration: underline;
+}
+.bottom-text{
+    margin: 10px 0 10px 0;
+}
+
+@keyframes float1 {
+    0%{left: 0;}
+    100%{left: 100px;}
+}
+
+@keyframes float2 {
+    0%{right: 0;}
+    100%{right: 100px;}
+}
+
+@keyframes fly {
+    0% {left: 0;}
+    100%{left: 100%;}
+
+}
+
+
+
+
+
+.name{
+    position: relative;
+    top: 20px;
+}

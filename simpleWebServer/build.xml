@@ -1,9 +1,22 @@
 <?xml version = "1.0"?>
 <project name = "WebServer Build file" default = "compile">
-  <target name = "compile">
-    <javac srcdir="${src}"
-      destdir="${build}"
-      classpath="xyz.jar"
-      debug="on"
-      source="1.4"/>
+  
+  <target name = "clear">
+    <delete dir = "build"/>
   </target>
+  
+  <target name = "compile" depends="clear">
+	<mkdir dir = "build/classes"/>
+	<javac srcdir="src" destdir="build/classes"/>
+  </target>
+
+  <target name= "jar" depends="compile">
+	<mkdir dir = "build/jar"/>
+	<jar destfile = "build/jar/WebServer.jar" basedir="build/classes"/>
+  </target>
+
+  <target name= "run" depends="jar">
+	<java jar = "build/jar/WebServer.jar" fork="true"/>
+  </target>
+
+</project>
